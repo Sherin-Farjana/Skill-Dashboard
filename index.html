@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures mobile responsiveness -->
+
+    <!-- Page Title -->
     <title>Dynamic Skill Dashboard</title>
-    <!-- FontAwesome -->
+
+    <!-- FontAwesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,35 +16,105 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- BOOTSTRAP ICONS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- custom css -->
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css" /> <!-- External CSS file -->
   </head>
+
   <body>
-    <!-- Main container for the skill bars -->
+    <!-- Main container wrapping the entire dashboard -->
     <div class="container">
+
+      <!-- Header: Title + Subtitle -->
       <div class="header">
         <h1>Professional Skills Dashboard</h1>
         <p class="subtitle">
           A comprehensive overview of technical expertise and proficiency
         </p>
       </div>
-      <!-- Skills section with multiple skill bars -->
+
+      <!-- Skills section: contains all individual skill blocks -->
       <div class="skills-section">
-        <!--  Individual skill bar container -->
+
+        <!-- ===================== HTML SKILL ====================== -->
         <div class="skill-container">
+          <!-- Skill header: icon + title -->
           <div class="skill-header">
             <i class="fa-brands fa-html5"></i>
             <h3 class="skill-title">HTML5</h3>
           </div>
+
+          <!-- Short description of the skill -->
           <p class="skill-description">
-            Advanced markup, semantic elements, and modern HTML5 features
+            Semantic markup, accessibility features, and clean structure.
+          </p>
+
+          <!-- Skill progress bar -->
+          <div class="skill-bar">
+            <!-- Animated progress fill -->
+            <div class="skill-progress" data-percent="99">
+              <span class="percent">99%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== CSS SKILL ====================== -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3 class="skill-title">CSS3</h3>
+          </div>
+          <p class="skill-description">
+            Responsive layouts, animations, flexbox, grid, and UI styling.
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="95">
+              <span class="percent">95%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== JavaScript SKILL ====================== -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-brands fa-js"></i>
+            <h3 class="skill-title">JavaScript (ES6)</h3>
+          </div>
+          <p class="skill-description">
+            Modern ES6+, DOM manipulation, async programming, and API integration.
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="92">
+              <span class="percent">92%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== SASS SKILL ====================== -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-brands fa-sass"></i>
+            <h3 class="skill-title">SASS</h3>
+          </div>
+          <p class="skill-description">
+            Variables, mixins, nesting, modular SCSS architecture.
           </p>
           <div class="skill-bar">
             <div class="skill-progress" data-percent="90">
@@ -49,82 +123,155 @@
           </div>
         </div>
 
+        <!-- ===================== BOOTSTRAP SKILL ====================== -->
         <div class="skill-container">
           <div class="skill-header">
-            <i class="fab fa-css3-alt"></i>
-            <h3 class="skill-title">CSS3</h3>
+            <i class="fa-brands fa-bootstrap"></i>
+            <h3 class="skill-title">Bootstrap</h3>
           </div>
           <p class="skill-description">
-            Responsive design, animations, and modern CSS frameworks
+            Utility classes, grid layouts, components, and responsive UI design.
           </p>
           <div class="skill-bar">
-            <div class="skill-progress" data-percent="85">
-              <span class="percent">85%</span>
-            </div>
-          </div>
-        </div>
-        <div class="skill-container">
-          <div class="skill-header">
-            <i class="fab fa-js"></i>
-            <h3 class="skill-title">JavaScript</h3>
-          </div>
-          <p class="skill-description">
-            ES6+, DOM manipulation, and async programming 75
-          </p>
-          <div class="skill-bar">
-            <div class="skill-progress" data-percent="80">
-              <span class="percent">80%</span>
+            <div class="skill-progress" data-percent="97">
+              <span class="percent">97%</span>
             </div>
           </div>
         </div>
 
+        <!-- ===================== TAILWIND CSS SKILL ====================== -->
         <div class="skill-container">
           <div class="skill-header">
-            <i class="fab fa-react"></i>
+            <i class="fa-slab fa-regular fa-equals"></i>
+            <h3 class="skill-title">Tailwind CSS</h3>
           </div>
-          <h3 class="skill-title">ReactJS</h3>
           <p class="skill-description">
-            Component-based architecture, hooks, and state management
+            Utility-first styling, responsive design, and clean UI component building.
           </p>
           <div class="skill-bar">
-            <div class="skill-progress" data-percent="75">
-              <span class="percent">75%</span>
+            <div class="skill-progress" data-percent="92">
+              <span class="percent">92%</span>
             </div>
           </div>
         </div>
 
+        <!-- ===================== REACT JS SKILL ====================== -->
         <div class="skill-container">
           <div class="skill-header">
-            <i class="fab fa-node-js"></i>
-            <h3 class="skill-title">Nodejs</h3>
+            <i class="fa-brands fa-react"></i>
+            <h3 class="skill-title">React JS</h3>
           </div>
           <p class="skill-description">
-            Server-side JavaScript, API development, and Express.js
+            Hooks, state management, components, routing, and UI development.
           </p>
           <div class="skill-bar">
-            <div class="skill-progress" data-percent="75">
-              <span class="percent">75%</span>
+            <div class="skill-progress" data-percent="91">
+              <span class="percent">91%</span>
             </div>
           </div>
         </div>
 
+        <!-- =====================  NEXT JS SKILL ====================== -->
         <div class="skill-container">
           <div class="skill-header">
-            <i class="fas fa-database"></i>
-            <h3 class="skill-title">SQL</h3>
+            <i class="fa-brands fa-react"></i>
+            <h3 class="skill-title">Next.js</h3>
           </div>
           <p class="skill-description">
-            Database design, queries, and performance optimization
+            SSR, SSG, API routes, app router, and optimized deployment.
           </p>
           <div class="skill-bar">
-            <div class="skill-progress" data-percent="65">
-              <span class="percent">65%</span>
+            <div class="skill-progress" data-percent="90">
+              <span class="percent">90%</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- custom js -->
+
+        <!-- =====================  JEST & RTL SKILL ====================== -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-brands fa-web-awesome"></i>
+            <h3 class="skill-title">Jest</h3>
+          </div>
+          <p class="skill-description">
+            Unit testing, component testing, mocks, and test-driven UI validation.
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="93">
+              <span class="percent">93%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====================  WEBPACK SKILL ====================== -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-solid fa-cubes"></i>
+            <h3 class="skill-title">Webpack</h3>
+          </div>
+          <p class="skill-description">
+            Bundling, loaders, plugins, asset optimization, and modular builds.
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="95">
+              <span class="percent">95%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====================  BABEL SKILL ====================== -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-solid fa-b"></i>
+            <h3 class="skill-title">Babel</h3>
+          </div>
+          <p class="skill-description">
+            Transpiling ES6+ code, compatibility handling, and JS compilation.
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="95">
+              <span class="percent">95%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====================  VERCEL SKILL ====================== -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <h3 class="skill-title">Vercel</h3>
+          </div>
+          <p class="skill-description">
+            Deployment, hosting, serverless functions, and CI/CD workflow.
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="98">
+              <span class="percent">98%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====================  NETLIFY SKILL ====================== -->
+        <div class="skill-container">
+          <div class="skill-header">
+            <i class="fa-solid fa-hexagon-nodes"></i>
+            <h3 class="skill-title">Netlify</h3>
+          </div>
+          <p class="skill-description">
+            Static hosting, form handling, serverless functions, and automation.
+          </p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-percent="98">
+              <span class="percent">98%</span>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- end of skills-section -->
+    </div> <!-- end of container -->
+
+    <!-- Custom script controlling animations -->
     <script src="script.js"></script>
   </body>
+
 </html>
