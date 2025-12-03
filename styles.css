@@ -1,6 +1,4 @@
-/* ---------------------------------------------------------- */
-/* GLOBAL RESETS & BASE TYPOGRAPHY                            */
-/* ---------------------------------------------------------- */
+/* GLOBAL RESETS & BASE TYPOGRAPHY */
 
 * {
   margin: 0;
@@ -9,9 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* ---------------------------------------------------------- */
-/* BODY LAYOUT — CENTERED CONTENT + MOBILE-FIRST SPACING      */
-/* ---------------------------------------------------------- */
+/* BODY LAYOUT — CENTERED CONTENT + MOBILE-FIRST SPACING */
 
 body {
   min-height: 100vh;
@@ -23,9 +19,8 @@ body {
   overflow-x: hidden;
 }
 
-/* ---------------------------------------------------------- */
-/* MAIN CONTAINER — CARD STYLE WRAPPER                        */
-/* ---------------------------------------------------------- */
+
+/* MAIN CONTAINER — CARD STYLE WRAPPER */
 
 .container {
   width: 100%;
@@ -35,9 +30,7 @@ body {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.09);
 }
 
-/* ---------------------------------------------------------- */
-/* HEADER — TITLE + SUBTITLE                                  */
-/* ---------------------------------------------------------- */
+/* HEADER — TITLE + SUBTITLE */
 
 .header {
   text-align: center;
@@ -59,9 +52,7 @@ h1 {
   line-height: 1.5;
 }
 
-/* ---------------------------------------------------------- */
-/* SKILLS LIST — RESPONSIVE ROW LAYOUT                        */
-/* ---------------------------------------------------------- */
+/* SKILLS LIST — RESPONSIVE ROW LAYOUT*/
 
 .skills-section {
   display: flex;
@@ -70,9 +61,7 @@ h1 {
   padding: 0 10px;
 }
 
-/* ---------------------------------------------------------- */
-/* INDIVIDUAL SKILL CARD                                      */
-/* ---------------------------------------------------------- */
+/* INDIVIDUAL SKILL CARD */
 
 .skill-container {
   width: 100%;
@@ -90,9 +79,7 @@ h1 {
   cursor: pointer;
 }
 
-/* ---------------------------------------------------------- */
-/* SKILL TITLE + ICON                                         */
-/* ---------------------------------------------------------- */
+/* SKILL TITLE + ICON */
 
 .skill-header {
   display: flex;
@@ -112,9 +99,7 @@ h1 {
   font-weight: 600;
 }
 
-/* ---------------------------------------------------------- */
-/* DESCRIPTION TEXT                                            */
-/* ---------------------------------------------------------- */
+/* DESCRIPTION TEXT */
 
 .skill-description {
   color: #636e72;
@@ -123,9 +108,7 @@ h1 {
   line-height: 1.4;
 }
 
-/* ---------------------------------------------------------- */
-/* SKILL PROGRESS BAR                                          */
-/* ---------------------------------------------------------- */
+/* SKILL PROGRESS BAR */
 
 .skill-bar {
   width: 100%;
@@ -154,9 +137,7 @@ h1 {
   font-size: 0.85em;
 }
 
-/* ---------------------------------------------------------- */
-/* ICON COLORS (BRANDED TONES)                                 */
-/* ---------------------------------------------------------- */
+/* ICON COLORS (BRANDED TONES) */
 
 .fa-html5 {
   color: #e34f26;
@@ -197,9 +178,8 @@ h1 {
 .fa-hexagon-nodes {
   color: #32e6e2;
 }
-/* ---------------------------------------------------------- */
-/* ANIMATION — PROGRESS FILL                                   */
-/* ---------------------------------------------------------- */
+
+/* ANIMATION — PROGRESS FILL */
 
 .skill-progress.animate {
   animation: fillBar 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -214,9 +194,7 @@ h1 {
   }
 }
 
-/* ---------------------------------------------------------- */
-/* MEDIA QUERIES — RESPONSIVE ADAPTATION                       */
-/* ---------------------------------------------------------- */
+/* MEDIA QUERIES — RESPONSIVE ADAPTATION */
 
 /* Small tablets (480px+) */
 @media screen and (min-width: 480px) {
