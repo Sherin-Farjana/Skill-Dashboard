@@ -44,16 +44,17 @@ It includes:
 
 ---
 
-**HTML5** Structure & layout
-**CSS3** Styling, animations, UI
-**JavaScript** Logic & dynamic animations
-**FontAwesome** Icons for each skill
-**Bootstrap Icons** Additional icon support
+- **HTML5** Structure & layout
+- **CSS3** Styling, animations, UI
+- **JavaScript** Logic & dynamic animations
+- **FontAwesome** Icons for each skill
+- **Bootstrap Icons** Additional icon support
 
 ---
 
 ## Project Structure
 
+```
     Skill-Dashboard/
     │
     ├── index.html      # Main HTML file
@@ -61,13 +62,15 @@ It includes:
     ├── script.js       # JavaScript for skill animations
     └── README.md       # Project documentation
 
+```
+
 ---
 
 ## Author
 
-**Sherin Farjana**\
-💼 Front End Developer \| C, C++, OpenGL, and Web Technologies\
-🔗 LinkedIn: https://www.linkedin.com/in/sherin-farjana\
-🔗 GitHub: https://github.com/Sherin-Farjana
+**Sherin Farjana**  
+💼 Front End Developer | Specializing in C, C++, OpenGL, and Web Technologies  
+🔗 [LinkedIn](https://www.linkedin.com/in/sherin-farjana)  
+🔗 [GitHub](https://github.com/Sherin-Farjana)
 
 ---
